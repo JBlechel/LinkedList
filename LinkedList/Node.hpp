@@ -51,11 +51,9 @@ Node<ItemType>::Node(ItemType itemType, Node* node) {
 	next = node;
 }
 
-//not sure how I want to delete node, maybe build constructor that allows a function to be passed as an argument
-//so that if user wants to delete their data as the data as it
+
 template<typename ItemType>
 Node<ItemType>::~Node() {
-	delete next;
 }
 
 template<typename ItemType>
